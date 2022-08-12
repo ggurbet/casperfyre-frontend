@@ -6,7 +6,6 @@ ports:
   - port: 3000
 
 tasks:
-  - command: >
-    yarn install 
-    cat .env.development 
-    echo "Edit .env.development and adjust REACT_APP_BASE_URL to point to your backend API URL"
+  - init: yarn install
+  - name: Instructions
+    command: cat .env.development && echo "Edit .env.development and adjust REACT_APP_BASE_URL to point to your backend API URL"
