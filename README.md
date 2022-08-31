@@ -107,11 +107,13 @@ These features were scoped and determined to be the essential features needed fo
 
 ### Testing
 
-Testing done through yarn -> npm -> react-scripts
+Testing done with Cypress. Uses testing remote host. Pre-configured.
 
 ```bash
-yarn test
+yarn run cypress open
 ```
+
+And run E2E Testing.
 
 ### Documentation
 
