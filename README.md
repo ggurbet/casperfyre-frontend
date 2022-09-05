@@ -107,7 +107,7 @@ These features were scoped and determined to be the essential features needed fo
 
 ### Testing
 
-Testing done with Cypress. Uses testing remote host. Pre-configured. If you have your own server, and user/admi accounts, modify **cypress.config.js**, adjust the following to fit your test account.
+Testing done with Cypress. Uses testing remote host. Pre-configured. If you have your own server, and user/admin accounts, modify **cypress.config.js**, adjust the following to fit your test account.
 
 ```
 DEV_EMAIL: "user@email",
