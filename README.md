@@ -107,9 +107,20 @@ These features were scoped and determined to be the essential features needed fo
 
 ### Testing
 
-Testing done with Cypress. Uses testing remote host. Pre-configured.
+Testing done with Cypress. Uses testing remote host. Pre-configured. If you have your own server, and user/admi accounts, modify **cypress.config.js**, adjust the following to fit your test account.
+
+```
+DEV_EMAIL: "user@email",
+ADMIN_LOGIN_EMAIL: "admin@email",
+ADMIN_LOGIN_PASSWORD: "admin-password",
+
+baseUrl: 'https://casperfyre.com'
+```
+
+Then
 
 ```bash
+yarn install
 yarn run cypress open
 ```
 
